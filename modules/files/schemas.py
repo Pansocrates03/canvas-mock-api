@@ -1,0 +1,25 @@
+class File():   
+    id: int
+    folder_id: int
+    display_name: str
+    filename: str
+    content_type: str
+    url: str
+    size: int
+    created_at: str
+    updated_at: str
+    unlock_at: str
+    locked: bool
+    hidden: bool
+    lock_at: str
+    hidden_for_user: bool
+    visibility_level: str
+    thumbnail_url: None
+    modified_at: str
+    mime_class: str
+    media_entry_id: str
+    locked_for_user: bool
+    lock_info: None
+    lock_explanation: str
+    preview_url: None
+    

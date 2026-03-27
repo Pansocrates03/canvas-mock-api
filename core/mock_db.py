@@ -84,3 +84,31 @@ MOCK_QUIZZES = [
 MOCK_QUIZ_STATS = [
     {"id": 1, "quiz_id": 101, "submission_statistics": {"score_average": 85.5}}
 ]
+
+MOCK_FILES = [
+    {
+        "id": 569,
+        "folder_id": 4207,
+        "display_name": "file.txt",
+        "filename": "file.txt",
+        "content-type": "text/plain",
+        "url": "http://www.example.com/files/569/download?download_frd=1",
+        "size": 43451,
+        "created_at": "2012-07-06T14:58:50Z",
+        "updated_at": "2012-07-06T14:58:50Z",
+        "unlock_at": "2012-07-07T14:58:50Z",
+        "locked": False,
+        "hidden": False,
+        "lock_at": "2012-07-20T14:58:50Z",
+        "hidden_for_user": False,
+        "visibility_level": "course",
+        "thumbnail_url": None,
+        "modified_at": "2012-07-06T14:58:50Z",
+        "mime_class": "html",
+        "media_entry_id": "m-3z31gfpPf129dD3sSDF85SwSDFnwe",
+        "locked_for_user": False,
+        "lock_info": None,
+        "lock_explanation": "This assignment is locked until September 1 at 12:00am",
+        "preview_url": None
+    }
+]

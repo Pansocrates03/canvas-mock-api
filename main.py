@@ -3,6 +3,8 @@ from modules.courses import router as courses_router
 from modules.assignments import router as assignments_router
 from modules.quizzes import router as quizzes_router
 from modules.enrollments import router as enrollments_router
+from modules.oauth import router as oauth_router
+from modules.files import router as files_router
 
 app = FastAPI(
     title="Canvas Mock API",
@@ -11,10 +13,13 @@ app = FastAPI(
 )
 
 # Registrar los módulos
+app.include_router(oauth_router.router)
 app.include_router(courses_router.router)
 app.include_router(assignments_router.router)
 app.include_router(quizzes_router.router)
 app.include_router(enrollments_router.router)
+app.include_router(files_router.router)
+
 
 @app.get("/")
 async def root():
